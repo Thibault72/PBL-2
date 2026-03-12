@@ -22,7 +22,7 @@
     Programmer un générateur de trafic permettant de créer différents scénarios (normal, crise carburant, crise médicale, sommet 
     diplomatique). Prend en entrée le type de scénario et le nombre d'avion voulu et renvoi une liste d'avion.
 
-6/
+6/  Thibault
     Tester votre module sur des volumes croissants (10, 30, 50, 100 avions) et 
     analyser les limites du tri quadratique. 
 
@@ -31,3 +31,5 @@
     carburant des autres diminue, et un crash survient si fuel ≤ 0 ! 
 
     Produire un bilan (avions sauvés / crashés) et justifier vos choix
+
+Du 1 au 5 doivent être publié !!!"AU PLUS TARD DIMANCHE!!! dimanche
