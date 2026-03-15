@@ -17,7 +17,7 @@ def insertion_sort(aircraft_list, policy):
             aircraft[j+1] = aircraft[j]  # shift aircraft to the right
             j-=1
         # Insert th aircraft in the correct position
-        aircraft[j+1] = current_aircraft[j]
+        aircraft[j+1] = current_aircraft
     # Return the sorted list
     return aircraft
 
@@ -40,6 +40,7 @@ def selection_sort(aircraft_list, policy):
         aircraft[i], aircraft[priority_index] = aircraft[priority_index], aircraft[i]
         # Return the sorted list
         return aircraft
+        
         
 def sort_aircraft(aircraft_list, policy, method="insertion"):
      # Choose the sorting algorithm depending o the method parameter
