@@ -9,13 +9,18 @@ def generate_traffic(scenario, n):
 
     for i in range(n):
 
+        letter1 = chr(random.randint(65,90))
+        letter2 = chr(random.randint(65,90))
+
+        number = random.randit(100,999)
+
         plane = {
-            "id": "A" + str(i),
+            "id": letter1 + letter2 + str(number),
             "fuel": random.randint(10,60),
             "medical": False,
             "diplomatic_level": random.randint(1,5),
             "technical_issue": False,
-            "arrival_time": 19.40 + i * 0.01
+            "arrival_time": 19.4 + i * 0.01
         }
 
         if scenario == "fuel_crisis":
