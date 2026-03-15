@@ -1,5 +1,5 @@
 import random
-
+from Fonction_utilitaires import afficher_avions
 
 def generate_traffic(scenario, n):
 
@@ -7,7 +7,7 @@ def generate_traffic(scenario, n):
         raise ValueError("unknown scenario")
 
     planes = []
-    used_ids = set()
+    used_ids = []
 
     for i in range(n):
 
@@ -19,7 +19,7 @@ def generate_traffic(scenario, n):
             plane_id = letter1 + letter2 + str(number)
 
             if plane_id not in used_ids:
-                used_ids.add(plane_id)
+                used_ids.append(plane_id)
                 break
 
         plane = {
@@ -44,3 +44,5 @@ def generate_traffic(scenario, n):
         planes.append(plane)
 
     return planes
+
+afficher_avions(generate_traffic("fuel_crisis", 20))
