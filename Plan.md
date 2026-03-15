@@ -1,4 +1,4 @@
-1/      
+1/      Nael
     Prend en entrée la liste d'avions et return True si elle n'a pas d'erreurs et False si elle en a et afficher les erreurs.
 
 2/      Thibault
@@ -22,11 +22,11 @@
     Programmer un générateur de trafic permettant de créer différents scénarios (normal, crise carburant, crise médicale, sommet 
     diplomatique). Prend en entrée le type de scénario et le nombre d'avion voulu et renvoi une liste d'avion.
 
-6/  Thibault
+6/      Thibault
     Tester votre module sur des volumes croissants (10, 30, 50, 100 avions) et 
     analyser les limites du tri quadratique. 
 
-7/
+7/      Nael
     Simuler l’écoulement du temps : à chaque tour, un avion atterrit, le 
     carburant des autres diminue, et un crash survient si fuel ≤ 0 ! 
 
