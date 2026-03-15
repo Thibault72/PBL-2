@@ -1,4 +1,5 @@
 import random
+from Fonction_utilitaires import afficher_avions 
 
 def generate_traffic(scenario, n):
 
@@ -22,11 +23,15 @@ def generate_traffic(scenario, n):
             plane["fuel"] = random.randint(5,30)
 
         elif scenario == "medical_crisis":
-            if random.random() < 0.3:
+            if random.random() < 0.33:
                 plane["medical"] = True
 
         elif scenario == "diplomatic_summit":
             plane["diplomatic_level"] = random.randint(3,5)
 
         planes.append(plane)
+        
     return planes
+
+
+afficher_avions(generate_traffic("normal", 50))
