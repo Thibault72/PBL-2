@@ -1,7 +1,7 @@
 """
 POLICIES MODULE
 Defines decision rules (comparators) used to prioritize aircraft.
-A policy returns True if aircraft a1 should land before aircraft a2.
+A policy. returns True if aircraft a1 should land before aircraft a2.
 """
 
 
