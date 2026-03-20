@@ -1,8 +1,7 @@
 1/      Nael
     Prend en entrée la liste d'avions et return True si elle n'a pas d'erreurs et False si elle en a et afficher les erreurs.
 
-2/      Thibault    RENDU DIMANCHE 15 MARS 13H00
-
+2/      Thibault
      Implémenter des fonctions utilitaires (affichage, recherche d’un minimum, extraction d’un sous-ensemble d'avions)
 
 3/      Lizon
@@ -19,8 +18,7 @@
 
     Comparer empiriquement les algorithmes (nombre de comparaisons, éventuellement temps d’exécution) sur plusieurs tailles de trafic. 
 
-5/      Ryan    RENDU DIMANCHE 15 MARS 12H30
-
+5/      Ryan
     Programmer un générateur de trafic permettant de créer différents scénarios (normal, crise carburant, crise médicale, sommet 
     diplomatique). Prend en entrée le type de scénario et le nombre d'avion voulu et renvoi une liste d'avion.
 
