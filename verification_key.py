@@ -1,0 +1,58 @@
+def verification(avion):
+    n = len(avion)
+    for i in avion:
+        list_k = 0
+        list_v = 0
+        id = []
+        for key, value in i.items():
+            if key =="fuel":
+                list_k += 1
+                if type(value) == int:
+                    list_v += 1
+                else:
+                    print(f"Error of value plane {i}, for {key}")
+            if key =="diplomatic_level":
+                list_k += 1
+                if type(value) == int:
+                    list_v += 1
+                else:
+                    print(f"Error of value plane {i}, for {key}")
+            if key =="id":
+                id.append(value)
+                list_k += 1
+                if type(value) == str:
+                    list_v += 1
+                else:
+                    print(f"Error of value plane {i}, for {key}")
+            if key =="medical":
+                list_k += 1
+                if type(value) == bool:
+                    list_v += 1
+                else:
+                    print(f"Error of value plane {i}, for {key}")
+            if key =="technical issue":
+                list_k += 1
+                if type(value) == bool:
+                    list_v += 1
+                else:
+                    print(f"Error of value plane {i}, for {key}")
+            if key =="arrival_time":
+                list_k += 1
+                if type(value) == float:
+                    list_v += 1
+                else:
+                    print(f"Error of value plane {i}, for {key}")
+        if list_k != 6:
+            return(f"Error from key, plane {i} : miss one key")
+        if list_k != 6:
+            return(f"Error from value, plane {i} : miss one value")
+    for k in range(0, n):
+        for j, val in enumerate(id):
+            if val[j] == val[k] and j != k:
+                print(f"Two planes have the same id ({val})")
+
+
+        
+
+                
+           
