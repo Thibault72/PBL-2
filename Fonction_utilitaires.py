@@ -32,9 +32,9 @@ AVIONS_INITIAL = [
 def afficher_avions(Liste):
     print("Liste des avions :")
     for avion in Liste:
-        print(f"ID: {avion['id']}, Fuel: {avion['fuel']} tonnes, Medical: {avion['medical']}, Technical Issue: {avion['technical_issue']}, Diplomatic Level: {avion['diplomatic_level']}, Arrival Time: {avion['arrival_time']}")   
+        print(f"ID: {avion['id']}, Fuel: {avion['fuel']}, Medical: {avion['medical']}, Technical Issue: {avion['technical_issue']}, Diplomatic Level: {avion['diplomatic_level']}, Arrival Time: {avion['arrival_time']}")   
 
-def utilitaire(Avions, minfuel = 0,maxfuel = 100, medical = True, technical_issue = None, mindiplomatic_level = 0, maxdiplomatic_level = 5):
+def utilitaire(Avions, minfuel = 0,maxfuel = 100, medical = None, technical_issue = None, mindiplomatic_level = 0, maxdiplomatic_level = 5):
 
     filtered_avions = []
     if medical != None and technical_issue != None:
