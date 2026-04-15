@@ -30,7 +30,6 @@ AVIONS_INITIAL = [
 
 
 def afficher_avions(Liste):
-    print("Liste des avions :")
     for avion in Liste:
         print(f"ID: {avion['id']}, Fuel: {avion['fuel']}, Medical: {avion['medical']}, Technical Issue: {avion['technical_issue']}, Diplomatic Level: {avion['diplomatic_level']}, Arrival Time: {avion['arrival_time']}")   
 

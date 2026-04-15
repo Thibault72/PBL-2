@@ -24,7 +24,7 @@ def generate_traffic(scenario, n):
 
         plane = {
             "id": plane_id,
-            "fuel": random.randint(10,60),
+            "fuel": random.randint(int(0.1*n), int(n*1.1)),
             "medical": False,
             "diplomatic_level": random.randint(1,5),
             "technical_issue": False,
@@ -32,7 +32,7 @@ def generate_traffic(scenario, n):
         }
 
         if scenario == "fuel_crisis":
-            plane["fuel"] = random.randint(5,30)
+            plane["fuel"] = random.randint(3,100)
 
         elif scenario == "medical_crisis":
             if random.random() < 0.3:
@@ -45,4 +45,3 @@ def generate_traffic(scenario, n):
 
     return planes
 
-afficher_avions(generate_traffic("fuel_crisis", 20))

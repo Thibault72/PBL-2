@@ -3,7 +3,7 @@ import Fonction_utilitaires
 import verification_key
 import sorts
 
-methods = "insertion"
+methods = "selection"
 #"insertion" or "selection"
 
 
@@ -19,10 +19,14 @@ def Main(crisis, number_of_planes, Plane = None):
         Fonction_utilitaires.afficher_avions(planes)
         return
     
-    sorted_planes = sorts.sort_aircraft(planes, crisis, methods)
+    sorted_planes, crash, planes_crash = sorts.sort_aircraft(planes, crisis, methods)
+    print(f"Planes that crashed: ")
+    Fonction_utilitaires.afficher_avions(planes_crash)
+    print(f"Planes that landed: ")
     Fonction_utilitaires.afficher_avions(sorted_planes)
+    print(f"Number of planes that crashed: {crash}")
 
-Main("normal", 10)
+Main("normal", 100)
         
     
 
